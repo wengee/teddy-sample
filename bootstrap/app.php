@@ -4,13 +4,14 @@
  * @version  2019-08-12 14:37:30 +0800
  */
 
-use App\Http\Request;
-use App\Http\Response;
-use Teddy\App;
+$app = Teddy\App::create(defined('BASE_PATH') ? BASE_PATH : dir(__DIR__));
 
-$app = App::create(defined('BASE_PATH') ? BASE_PATH : dir(__DIR__));
+$app->bind('request', App\Http\Request::class);
+$app->bind('response', App\Http\Response::class);
 
-$app->bind('request', Request::class);
-$app->bind('response', Response::class);
+$app->addErrorMiddleware(false, false, false);
+
+$app->addEventListeners([
+]);
 
 return $app;
