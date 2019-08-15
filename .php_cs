@@ -12,6 +12,9 @@ return PhpCsFixer\Config::create()
     ->setRiskyAllowed(true)
     ->setRules([
         '@PSR2' => true,
+        '@PHP71Migration:risky' => true,
+        '@PHP73Migration' => true,
+
         'header_comment' => [
             'commentType' => 'PHPDoc',
             'header' => $header,

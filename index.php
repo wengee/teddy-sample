@@ -1,7 +1,7 @@
-<?php
+<?php declare(strict_types=1);
 /**
  * @author   Fung Wing Kit <wengee@gmail.com>
- * @version  2019-08-12 14:35:56 +0800
+ * @version  2019-08-15 10:38:42 +0800
  */
 
 defined('BASE_PATH') || define('BASE_PATH', __DIR__ . '/');

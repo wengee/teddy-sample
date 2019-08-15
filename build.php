@@ -1,7 +1,7 @@
-<?php
+<?php declare(strict_types=1);
 /**
  * @author   Fung Wing Kit <wengee@gmail.com>
- * @version  2019-08-12 14:47:38 +0800
+ * @version  2019-08-15 10:39:05 +0800
  */
 
 require __DIR__ . '/vendor/autoload.php';
