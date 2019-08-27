@@ -11,6 +11,7 @@ start_app()
 restart_app()
 {
     echo "Restart server after 3 seconds."
+    kill $PID
     sleep 3
 }
 
