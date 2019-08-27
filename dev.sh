@@ -1,31 +1,41 @@
 #!/bin/sh
 
-startup()
+start_app()
 {
-  php ./index.php &
-  PID=$!
+    if [ "$PID" = "" ]; then
+        echo -n "Starting server ... "
+        php ./index.php &
+        PID=$!
+        echo "[OK]"
+    fi
+}
+
+restart_app()
+{
+    if [ "$PID" = "" ]; then
+        echo "Restart server after 3 seconds."
+        sleep 3
+        start_app
+    fi
 }
 
 sigint_handler()
 {
-  kill $PID
-  exit
+    kill $PID
+    exit
 }
 
 trap sigint_handler INT TERM
 
-while true; do
-  echo 'Starting server...'
-  startup
-  echo 'Server is started.'
-
-  if type fswatch >/dev/null 2>&1; then
-    fswatch -1 --exclude "^.+\.[^p][^h][^p]$" -i -r `pwd`
-  else
-    inotifywait --event close_write,modify,create,move,delete --timefmt '%Y-%m-%d %H:%M:%S' --format '[%T] %w%f %e' --excludei "^.+\.[^p][^h][^p]$" -q -r `pwd`
-  fi
-
-  echo 'Restart server after 3 seconds.'
-  kill $PID
-  sleep 3
+start_app
+inotifywait -e close_write,modify,create,move,delete --format "%w%f" -mrq `pwd` | while read FILE_CHANGED; do
+    if echo $FILE_CHANGED | grep -i -e "\.php$"; then
+        if [ "$PID" != "" ]; then
+            echo -n "Stoping server ... "
+            kill $PID
+            PID=""
+            echo "[OK]"
+            restart_app &
+        fi
+    fi
 done
