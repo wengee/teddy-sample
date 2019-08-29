@@ -11,8 +11,9 @@ start_app()
 restart_app()
 {
     echo "Restart server after 3 seconds."
+    sleep 1
     kill $PID
-    sleep 3
+    sleep 2
 }
 
 inotify_wait()
@@ -32,8 +33,4 @@ sigint_handler()
 
 trap sigint_handler INT TERM
 
-while true; do
-    start_app
-    inotify_wait
-    restart_app
-done
+while true; do start_app; inotify_wait; restart_app; done
