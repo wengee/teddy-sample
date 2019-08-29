@@ -2,15 +2,16 @@
 
 start_app()
 {
-    echo -n "Starting server ... "
+    echo -n `date +'[%Y-%m-%d %H:%M:%S]'` "Starting server ... "
     php ./index.php &
     PID=$!
-    echo "[OK]"
+    echo "OK"
+    sleep 1
 }
 
 restart_app()
 {
-    echo "Restart server after 3 seconds."
+    echo `date +'[%Y-%m-%d %H:%M:%S]'` "Restart server after 3 seconds."
     sleep 1
     kill $PID
     sleep 2
@@ -18,10 +19,13 @@ restart_app()
 
 inotify_wait()
 {
-    inotifywait -e close_write,modify,create,move,delete --format "%w%f" -mrq `pwd` | while read FILE; do
-        if echo $FILE | grep -i -e "\.php$"; then
-            return 0;
-        fi
+    inotifywait -e close_write,modify,create,move,delete --format "%w%f %e" -mrq `pwd` | while read FILE EVENT; do
+        case "$FILE" in
+        *.php)
+            echo `date +'[%Y-%m-%d %H:%M:%S]'` "$FILE" "$EVENT"
+            return 0
+        ;;
+        esac
     done
 }
 
