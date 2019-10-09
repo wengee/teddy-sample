@@ -4,10 +4,10 @@
  * @version  2019-10-09 11:47:03 +0800
  */
 
-namespace App\Http;
+namespace App\Tasks;
 
-use Teddy\Http\Request as TeddyRequest;
+use Teddy\Task;
 
-class Request extends TeddyRequest
+abstract class TaskBase extends Task
 {
 }

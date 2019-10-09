@@ -3,7 +3,7 @@
     "description": "Teddy sample app",
     "type": "project",
     "require": {
-        "fwkit/teddy": "^2.0",
+        "fwkit/teddy": "dev-master",
         "mix/guzzle-hook": "^1.0"
     },
     "license": "MIT",

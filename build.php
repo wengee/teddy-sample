@@ -5,7 +5,7 @@
  */
 
 require __DIR__ . '/vendor/autoload.php';
-Teddy\PharBuilder::build(__DIR__, [
+Teddy\Builder::build(__DIR__, [
     'main'      => 'index.php',
     'dist'      => __DIR__ . '/dist',
     'output'    => 'app.phar',
@@ -31,6 +31,7 @@ Teddy\PharBuilder::build(__DIR__, [
         'vendor/aliyuncs/oss-sdk-php/tests',
         'vendor/doctrine/annotations/docs',
         'vendor/funkjedi/composer-include-files',
+        'vendor/fwkit/teddy/.git',
         'vendor/fwkit/teddy/example',
         'vendor/monolog/monolog/doc',
         'vendor/monolog/monolog/tests',
