@@ -390,12 +390,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wengee/teddy.git",
-                "reference": "61812458ba66de57348e2dd62e3c79a5250b3a9e"
+                "reference": "4c5a743db2efeb38b49413eb7788e04a97083ad3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wengee/teddy/zipball/61812458ba66de57348e2dd62e3c79a5250b3a9e",
-                "reference": "61812458ba66de57348e2dd62e3c79a5250b3a9e",
+                "url": "https://api.github.com/repos/wengee/teddy/zipball/4c5a743db2efeb38b49413eb7788e04a97083ad3",
+                "reference": "4c5a743db2efeb38b49413eb7788e04a97083ad3",
                 "shasum": ""
             },
             "require": {
@@ -435,7 +435,7 @@
                 }
             ],
             "description": "A PHP framework based on SLIM",
-            "time": "2019-10-09T03:09:26+00:00"
+            "time": "2019-10-10T02:08:36+00:00"
         },
         {
             "name": "illuminate/config",

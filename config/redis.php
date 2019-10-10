@@ -6,7 +6,7 @@
 
 return [
     'default' => [
-        'host' => env('REDIS_HOST', '127.0.0.1'),
+        'host' => preg_split('#[\s,;]+#', env('REDIS_HOST', '127.0.0.1')),
         'port' => (int) env('REDIS_PORT', 6379),
         'dbIndex'   => (int) env('REDIS_DB', 0),
         'prefix' => env('REDIS_PREFIX', 'sample:'),
