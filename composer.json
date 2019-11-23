@@ -3,8 +3,7 @@
     "description": "Teddy sample app",
     "type": "project",
     "require": {
-        "fwkit/teddy": "dev-master",
-        "mix/guzzle-hook": "^1.0"
+        "fwkit/teddy": "dev-master"
     },
     "license": "MIT",
     "autoload": {
@@ -17,7 +16,7 @@
     },
     "extra": {
         "include_files": [
-            "vendor/mix/guzzle-hook/src/functions_include.php"
+            "vendor/fwkit/teddy/guzzle/functions_include.php"
         ]
     },
     "authors": [

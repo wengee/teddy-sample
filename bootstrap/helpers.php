@@ -1,10 +1,8 @@
 <?php declare(strict_types=1);
 /**
  * @author   Fung Wing Kit <wengee@gmail.com>
- * @version  2019-10-09 11:47:11 +0800
+ * @version  2019-11-23 10:23:10 +0800
  */
-
-use Slim\Psr7\Factory\UriFactory;
 
 if (!function_exists('validate')) {
     function validate($validation, array $data, array $rules = [], bool $quiet = false)
@@ -34,26 +32,5 @@ if (!function_exists('validate')) {
         }
 
         return $instance->validate($data, $rules, $quiet);
-    }
-}
-
-if (!function_exists('build_url')) {
-    function build_url(string $url, array $queryArgs = []): string
-    {
-        static $uriFactory;
-        if (!isset($uriFactory)) {
-            $uriFactory = new UriFactory;
-        }
-
-        if (!$queryArgs) {
-            return $url;
-        }
-
-        $uri = $uriFactory->createUri($url);
-        $query = $uri->getQuery();
-        $query .= ($query ? '&' : '') . http_build_query($queryArgs);
-        $uri = $uri->withQuery($query);
-
-        return (string) $uri;
     }
 }
