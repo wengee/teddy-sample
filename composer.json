@@ -2,10 +2,13 @@
     "name": "fwkit/teddy-sample",
     "description": "Teddy sample app",
     "type": "project",
-    "require": {
-        "fwkit/teddy": "dev-master"
-    },
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Fung Wing Kit",
+            "email": "wengee@gmail.com"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "App\\": "app/"
@@ -19,13 +22,14 @@
             "vendor/fwkit/teddy/guzzle/functions_include.php"
         ]
     },
-    "authors": [
-        {
-            "name": "Fung Wing Kit",
-            "email": "wengee@gmail.com"
-        }
-    ],
+    "require": {
+        "fwkit/teddy": "dev-master"
+    },
+    "require-dev": {
+        "fwkit/phar-builder": "^2.1"
+    },
     "scripts": {
-        "build": "composer dump-autoload -a && php build.php && composer dump-autoload"
+        "build": "sh ./build.sh",
+        "dev": "sh ./dev.sh"
     }
 }

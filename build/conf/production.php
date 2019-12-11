@@ -1,13 +1,12 @@
 <?php declare(strict_types=1);
 /**
  * @author   Fung Wing Kit <wengee@gmail.com>
- * @version  2019-08-15 10:39:05 +0800
+ * @version  2019-12-11 10:36:41 +0800
  */
 
-require __DIR__ . '/vendor/autoload.php';
-Teddy\Builder::build(__DIR__, [
+return [
     'main'      => 'index.php',
-    'dist'      => __DIR__ . '/dist',
+    'dist'      => BASE_DIR . '/dist',
     'output'    => 'app.phar',
 
     'directories' => [
@@ -25,12 +24,13 @@ Teddy\Builder::build(__DIR__, [
     'copy' => [
     ],
 
-    'exclude' => [
+    'ignore' => [
         'vendor/bin',
         'vendor/aliyuncs/oss-sdk-php/samples',
         'vendor/aliyuncs/oss-sdk-php/tests',
         'vendor/doctrine/annotations/docs',
         'vendor/funkjedi/composer-include-files',
+        'vendor/fwkit/phar-builder',
         'vendor/fwkit/teddy/.git',
         'vendor/fwkit/teddy/example',
         'vendor/monolog/monolog/doc',
@@ -41,4 +41,4 @@ Teddy\Builder::build(__DIR__, [
         'vendor/phpoption/phpoption/tests',
         'vendor/ralouphie/getallheaders/tests',
     ],
-]);
+];
