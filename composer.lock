@@ -385,12 +385,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wengee/teddy.git",
-                "reference": "33704ff909dc31aa21a2fe2455b182b5f9d0d4a8"
+                "reference": "70384e9335f18dd60ba3819d97f451dae24d56d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wengee/teddy/zipball/33704ff909dc31aa21a2fe2455b182b5f9d0d4a8",
-                "reference": "33704ff909dc31aa21a2fe2455b182b5f9d0d4a8",
+                "url": "https://api.github.com/repos/wengee/teddy/zipball/70384e9335f18dd60ba3819d97f451dae24d56d6",
+                "reference": "70384e9335f18dd60ba3819d97f451dae24d56d6",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -417,10 +417,13 @@
                 "vlucas/phpdotenv": "^3.4"
             },
             "require-dev": {
-                "guzzlehttp/guzzle": "^6.4"
+                "guzzlehttp/guzzle": "^6.4",
+                "jacobcyl/ali-oss-storage": "^2.1",
+                "overtrue/flysystem-cos": "^2.0"
             },
             "suggest": {
-                "jacobcyl/ali-oss-storage": "Allows you to use Aliyun OSS"
+                "jacobcyl/ali-oss-storage": "Allows you to use Aliyun OSS",
+                "overtrue/flysystem-cos": "Allows you to use TencentYun COS"
             },
             "type": "library",
             "extra": {
@@ -447,7 +450,7 @@
                 }
             ],
             "description": "A PHP framework based on SLIM",
-            "time": "2019-12-12T07:45:59+00:00"
+            "time": "2019-12-16T09:15:27+00:00"
         },
         {
             "name": "illuminate/config",
