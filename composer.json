@@ -30,6 +30,7 @@
     },
     "scripts": {
         "build": "sh ./build.sh",
+        "build:scf": "sh ./build.sh scf",
         "dev": "sh ./dev.sh"
     }
 }

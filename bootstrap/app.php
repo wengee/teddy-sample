@@ -4,13 +4,17 @@
  * @version  2019-11-23 10:26:21 +0800
  */
 
+use Teddy\Factory\AppFactory;
 use Teddy\Middleware\CORSMiddleware;
 
-$app = Teddy\App::create(defined('BASE_PATH') ? BASE_PATH : dirname(__DIR__));
+$app = AppFactory::create(defined('BASE_PATH') ? BASE_PATH : dirname(__DIR__));
 
 $app->bind('request', App\Http\Request::class);
 $app->bind('response', App\Http\Response::class);
 $app->bind('renderer', App\Providers\Renderer::class);
+
+$app->addBodyParsingMiddleware([
+]);
 
 $app->addErrorMiddleware(
     config('app.debug'),
