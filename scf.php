@@ -5,7 +5,7 @@
  */
 
 defined('BASE_PATH') || define('BASE_PATH', __DIR__ . '/');
-defined('IN_SCF') || define('IN_SCF', true);
+defined('TEDDY_RUNTIME') || define('TEDDY_RUNTIME', 'scf');
 
 require BASE_PATH . 'vendor/autoload.php';
 Teddy\Guzzle\DefaultHandler::set('curl');
