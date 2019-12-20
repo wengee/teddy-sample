@@ -385,12 +385,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wengee/teddy.git",
-                "reference": "2995099a04c1bd19b047e9ce0e8a77d7d3c6e31a"
+                "reference": "a9b55a38645a7b4a8974e9af9804ebbd892957fa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wengee/teddy/zipball/2995099a04c1bd19b047e9ce0e8a77d7d3c6e31a",
-                "reference": "2995099a04c1bd19b047e9ce0e8a77d7d3c6e31a",
+                "url": "https://api.github.com/repos/wengee/teddy/zipball/a9b55a38645a7b4a8974e9af9804ebbd892957fa",
+                "reference": "a9b55a38645a7b4a8974e9af9804ebbd892957fa",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -450,7 +450,7 @@
                 }
             ],
             "description": "A PHP framework based on SLIM",
-            "time": "2019-12-19T14:17:49+00:00"
+            "time": "2019-12-20T02:12:38+00:00"
         },
         {
             "name": "illuminate/config",
@@ -1828,16 +1828,16 @@
         },
         {
             "name": "symfony/translation",
-            "version": "v5.0.1",
+            "version": "v5.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "e86df1b0f1672362ecf96023faf2c42241c41330"
+                "reference": "3ae6fad7a3dc2d99a023f9360184628fc44acbb3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/e86df1b0f1672362ecf96023faf2c42241c41330",
-                "reference": "e86df1b0f1672362ecf96023faf2c42241c41330",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/3ae6fad7a3dc2d99a023f9360184628fc44acbb3",
+                "reference": "3ae6fad7a3dc2d99a023f9360184628fc44acbb3",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1907,7 +1907,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "https://symfony.com",
-            "time": "2019-11-18T17:27:11+00:00"
+            "time": "2019-12-12T13:03:32+00:00"
         },
         {
             "name": "symfony/translation-contracts",
