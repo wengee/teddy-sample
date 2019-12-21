@@ -1,13 +1,16 @@
 <?php declare(strict_types=1);
 /**
  * @author   Fung Wing Kit <wengee@gmail.com>
- * @version  2019-10-09 11:47:09 +0800
+ * @version  2019-12-21 11:19:45 +0800
  */
 
 return [
-    'handlers' => [
-        'file' => [
-            'path' => env('LOG_FILE', __DIR__ . '/../runtime/app.log'),
+    'default'   => env('LOG_DEFAULT_DRIVER', 'file'),
+
+    'handlers'  => [
+        'file'  => [
+            'driver'    => 'file',
+            'path'      => env('LOG_FILE', __DIR__ . '/../runtime/app.log'),
         ],
     ],
 ];
