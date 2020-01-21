@@ -17,13 +17,10 @@
             "bootstrap/helpers.php"
         ]
     },
-    "extra": {
-        "include_files": [
-            "vendor/fwkit/teddy/guzzle/functions_include.php"
-        ]
-    },
     "require": {
-        "fwkit/teddy": "dev-master"
+        "fwkit/teddy": "dev-master",
+        "fwkit/guzzle-hook": "^1.0",
+        "guzzlehttp/guzzle": "^6.5"
     },
     "require-dev": {
         "fwkit/phar-builder": "^2.1"
