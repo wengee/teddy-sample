@@ -1,14 +1,14 @@
 <?php declare(strict_types=1);
 /**
  * @author   Fung Wing Kit <wengee@gmail.com>
- * @version  2019-12-19 17:09:41 +0800
+ * @version  2020-03-04 14:26:39 +0800
  */
 
 defined('BASE_PATH') || define('BASE_PATH', __DIR__ . '/');
 defined('TEDDY_RUNTIME') || define('TEDDY_RUNTIME', 'scf');
 
 require BASE_PATH . 'vendor/autoload.php';
-Teddy\Guzzle\DefaultHandler::set('curl');
+GuzzleHttp\DefaultHandler::set('curl');
 
 function main($event, $context)
 {
