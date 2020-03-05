@@ -435,12 +435,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wengee/teddy.git",
-                "reference": "9766844009e969d629b8925ecfd5a2ba6d810302"
+                "reference": "b2c8cb7cc61e6c5885ecfd155e9938261e902c27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wengee/teddy/zipball/9766844009e969d629b8925ecfd5a2ba6d810302",
-                "reference": "9766844009e969d629b8925ecfd5a2ba6d810302",
+                "url": "https://api.github.com/repos/wengee/teddy/zipball/b2c8cb7cc61e6c5885ecfd155e9938261e902c27",
+                "reference": "b2c8cb7cc61e6c5885ecfd155e9938261e902c27",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -504,7 +504,7 @@
                 }
             ],
             "description": "A PHP framework based on SLIM",
-            "time": "2020-03-05T09:45:44+00:00"
+            "time": "2020-03-05T10:24:32+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
