@@ -435,12 +435,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/wengee/teddy.git",
-                "reference": "b2c8cb7cc61e6c5885ecfd155e9938261e902c27"
+                "reference": "c79de6bdb75fffd7621051bad2f54739a7025dac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wengee/teddy/zipball/b2c8cb7cc61e6c5885ecfd155e9938261e902c27",
-                "reference": "b2c8cb7cc61e6c5885ecfd155e9938261e902c27",
+                "url": "https://api.github.com/repos/wengee/teddy/zipball/c79de6bdb75fffd7621051bad2f54739a7025dac",
+                "reference": "c79de6bdb75fffd7621051bad2f54739a7025dac",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -504,7 +504,7 @@
                 }
             ],
             "description": "A PHP framework based on SLIM",
-            "time": "2020-03-05T10:24:32+00:00"
+            "time": "2020-03-12T08:03:34+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -938,16 +938,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.64",
+            "version": "1.0.65",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "d13c43dbd4b791f815215959105a008515d1a2e0"
+                "reference": "8f17b3ba67097aafb8318cd5c553b1acf7c891c8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/d13c43dbd4b791f815215959105a008515d1a2e0",
-                "reference": "d13c43dbd4b791f815215959105a008515d1a2e0",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/8f17b3ba67097aafb8318cd5c553b1acf7c891c8",
+                "reference": "8f17b3ba67097aafb8318cd5c553b1acf7c891c8",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1024,7 +1024,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2020-02-05T18:14:17+00:00"
+            "time": "2020-03-08T18:53:20+00:00"
         },
         {
             "name": "monolog/monolog",

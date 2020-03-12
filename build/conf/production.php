@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 /**
  * @author   Fung Wing Kit <wengee@gmail.com>
- * @version  2019-12-11 10:36:41 +0800
+ * @version  2020-03-12 15:58:43 +0800
  */
 
 return [
@@ -13,6 +13,7 @@ return [
         'app',
         'bootstrap',
         'config',
+        'migrations',
         'routes',
         'vendor'
     ],
