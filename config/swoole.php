@@ -25,7 +25,7 @@ return [
 
     // Swoole server options.
     'options' => [
-        'dispatch_mode'         => (int) env('SWOOLE_DISPATCH_MODE', 1),
+        'reactor_num'           => (int) env('SWOOLE_REACTOR_NUM', 1),
         'worker_num'            => (int) env('SWOOLE_WORKER_NUM', 1),
         'task_worker_num'       => (int) env('SWOOLE_TASK_WORKER_NUM', 1),
         'dispatch_mode'         => (int) env('SWOOLE_DISPATCH_MODE', 1),
