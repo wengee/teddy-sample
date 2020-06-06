@@ -1,13 +1,13 @@
 {
     "watch": {
         "exec": "/usr/bin/env php index.php",
-        "dir": ["app", "bootstrap", "config", "routes"],
-        "ext": [".php"]
+        "dirs": ["app", "bootstrap", "config", "routes"],
+        "extensions": [".php"]
     },
 
     "build": {
         "output": "app.phar",
-        "dir": [
+        "dirs": [
             "app",
             "bootstrap",
             "config",
@@ -38,7 +38,7 @@
         "modes": {
             "scf": {
                 "output": false,
-                "file": [
+                "files": [
                     "scf.php"
                 ]
             }
