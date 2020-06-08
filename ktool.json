@@ -1,12 +1,17 @@
 {
     "watch": {
+        "path": "__DIR__",
         "exec": "/usr/bin/env php index.php",
         "dirs": ["app", "bootstrap", "config", "routes"],
         "extensions": [".php"]
     },
 
     "build": {
+        "path": "__DIR__",
+        "dist": "__DIR__/dist",
         "output": "app.phar",
+        "entry": "index.php",
+
         "dirs": [
             "app",
             "bootstrap",
@@ -15,8 +20,10 @@
             "routes",
             "vendor"
         ],
+
         "copy": {
         },
+
         "ignore": [
             "vendor/bin/*",
             "vendor/aliyuncs/oss-sdk-php/samples/*",
