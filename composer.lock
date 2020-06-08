@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c3cb2de8b4127ee3753ccadae154d526",
+    "content-hash": "4b24a35c2b4ee267e3818e8247f910b1",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -3185,47 +3185,7 @@
             "time": "2020-05-23T09:42:03+00:00"
         }
     ],
-    "packages-dev": [
-        {
-            "name": "fwkit/phar-builder",
-            "version": "2.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/wengee/phar-builder.git",
-                "reference": "cdbd998ee99bc18747bc87c3272989f231bb13e7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/wengee/phar-builder/zipball/cdbd998ee99bc18747bc87c3272989f231bb13e7",
-                "reference": "cdbd998ee99bc18747bc87c3272989f231bb13e7",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "fwkit\\PharBuilder\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fung Wing Kit",
-                    "email": "wengee@gmail.com"
-                }
-            ],
-            "description": "Create a phar package of your project.",
-            "time": "2020-03-30T03:42:17+00:00"
-        }
-    ],
+    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],

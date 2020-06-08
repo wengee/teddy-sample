@@ -23,7 +23,6 @@
         "guzzlehttp/guzzle": "^6.5"
     },
     "require-dev": {
-        "fwkit/phar-builder": "^2.1"
     },
     "scripts": {
         "build": "sh ./build.sh",
