@@ -20,15 +20,10 @@
     "require": {
         "php": ">=7.3.0",
         "ext-swoole": ">=4.6.0",
-        "fwkit/teddy": "^2.0",
+        "fwkit/teddy": "^2.5",
         "guzzlehttp/guzzle": "^6.5"
     },
     "require-dev": {
         "swoole/ide-helper": "^4.5"
-    },
-    "scripts": {
-        "build": "sh ./build.sh",
-        "build:scf": "sh ./build.sh scf",
-        "dev": "sh ./dev.sh"
     }
 }
