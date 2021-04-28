@@ -20,7 +20,7 @@
     "require": {
         "php": ">=7.3.0",
         "ext-swoole": ">=4.6.0",
-        "fwkit/teddy": "^2.5",
+        "fwkit/teddy": "^2.7",
         "guzzlehttp/guzzle": "^6.5"
     },
     "require-dev": {
