@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 /**
  * @author   Fung Wing Kit <wengee@gmail.com>
- * @version  2019-11-23 10:24:16 +0800
+ * @version  2021-05-07 16:34:05 +0800
  */
 
 namespace App\Http;
@@ -10,27 +10,63 @@ use Teddy\Http\Request as TeddyRequest;
 
 class Request extends TeddyRequest
 {
-    public function validate($validation, array $rules = [])
+    /**
+     * @param string|Teddy\Validation\Validation $validation
+     * @param Teddy\Validation\Fields\Field[]    $fields
+     */
+    public function validate($validation, array $fields = [])
     {
-        return $this->validateParsedBody($validation, $rules);
+        return $this->validateParsedBody($validation, $fields);
     }
 
-    public function validateParsedBody($validation, array $rules = [])
+    /**
+     * @param string|Teddy\Validation\Validation $validation
+     * @param Teddy\Validation\Fields\Field[]    $fields
+     */
+    public function validateQuery($validation, array $fields = [])
     {
-        $postData = (array) $this->getParsedBody();
-        return validate($validation, $postData, $rules);
+        $postData = (array) $this->getQueryParams();
+
+        return validate($validation, $postData, $fields);
     }
 
-    public function checkParsedBody($validation, array $rules = [])
+    /**
+     * @param string|Teddy\Validation\Validation $validation
+     * @param Teddy\Validation\Fields\Field[]    $fields
+     */
+    public function checkQuery($validation, array $fields = [])
+    {
+        $postData = (array) $this->getQueryParams();
+
+        return validate($validation, $postData, $fields, true);
+    }
+
+    /**
+     * @param string|Teddy\Validation\Validation $validation
+     * @param Teddy\Validation\Fields\Field[]    $fields
+     */
+    public function validateParsedBody($validation, array $fields = [])
     {
         $postData = (array) $this->getParsedBody();
-        return validate($validation, $postData, $rules, true);
+
+        return validate($validation, $postData, $fields);
+    }
+
+    /**
+     * @param string|Teddy\Validation\Validation $validation
+     * @param Teddy\Validation\Fields\Field[]    $fields
+     */
+    public function checkParsedBody($validation, array $fields = [])
+    {
+        $postData = (array) $this->getParsedBody();
+
+        return validate($validation, $postData, $fields, true);
     }
 
     public function getPageInfo(int $pageSize = 0): array
     {
         $currentPage = max(1, (int) $this->getParam('page', 1));
-        if ($pageSize === 0) {
+        if (0 === $pageSize) {
             $pageSize = (int) $this->getParam('pageSize', 0);
             if ($pageSize <= 0 || $pageSize > 100 || !in_array($pageSize, [10, 20, 50, 100])) {
                 $pageSize = 20;
