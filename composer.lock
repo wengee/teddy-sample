@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3fbc560a477240e85a0aaf1fdeff4a3d",
+    "content-hash": "947892fb5ac5e33bed65449457c8cf8b",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -887,16 +887,16 @@
         },
         {
             "name": "fwkit/teddy",
-            "version": "2.8.0",
+            "version": "2.8.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wengee/teddy.git",
-                "reference": "aa5d2dd4718b5389f8adac92e611eaaa49a5c997"
+                "reference": "7f56270135a1da38109312ddeb9685e96410bd8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wengee/teddy/zipball/aa5d2dd4718b5389f8adac92e611eaaa49a5c997",
-                "reference": "aa5d2dd4718b5389f8adac92e611eaaa49a5c997",
+                "url": "https://api.github.com/repos/wengee/teddy/zipball/7f56270135a1da38109312ddeb9685e96410bd8c",
+                "reference": "7f56270135a1da38109312ddeb9685e96410bd8c",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -958,9 +958,9 @@
             "description": "A PHP framework based on SLIM",
             "support": {
                 "issues": "https://github.com/wengee/teddy/issues",
-                "source": "https://github.com/wengee/teddy/tree/2.8.0"
+                "source": "https://github.com/wengee/teddy/tree/2.8.4"
             },
-            "time": "2021-05-07T08:16:44+00:00"
+            "time": "2021-05-08T08:12:05+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",

@@ -1,13 +1,13 @@
 <?php declare(strict_types=1);
 /**
  * @author   Fung Wing Kit <wengee@gmail.com>
- * @version  2021-05-07 16:38:09 +0800
+ * @version  2021-05-08 16:15:24 +0800
  */
 
 if (!function_exists('validate')) {
     /**
      * @param string|Teddy\Validation\Validation $validation
-     * @param Teddy\Validation\Fields\Field[]    $fields
+     * @param Teddy\Validation\Field[]           $fields
      */
     function validate($validation, array $data, array $fields = [], bool $safe = false)
     {

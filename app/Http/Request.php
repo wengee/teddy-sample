@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 /**
  * @author   Fung Wing Kit <wengee@gmail.com>
- * @version  2021-05-07 16:34:05 +0800
+ * @version  2021-05-08 16:15:14 +0800
  */
 
 namespace App\Http;
@@ -12,7 +12,7 @@ class Request extends TeddyRequest
 {
     /**
      * @param string|Teddy\Validation\Validation $validation
-     * @param Teddy\Validation\Fields\Field[]    $fields
+     * @param Teddy\Validation\Field[]           $fields
      */
     public function validate($validation, array $fields = [])
     {
@@ -21,7 +21,7 @@ class Request extends TeddyRequest
 
     /**
      * @param string|Teddy\Validation\Validation $validation
-     * @param Teddy\Validation\Fields\Field[]    $fields
+     * @param Teddy\Validation\Field[]           $fields
      */
     public function validateQuery($validation, array $fields = [])
     {
@@ -32,7 +32,7 @@ class Request extends TeddyRequest
 
     /**
      * @param string|Teddy\Validation\Validation $validation
-     * @param Teddy\Validation\Fields\Field[]    $fields
+     * @param Teddy\Validation\Field[]           $fields
      */
     public function checkQuery($validation, array $fields = [])
     {
@@ -43,7 +43,7 @@ class Request extends TeddyRequest
 
     /**
      * @param string|Teddy\Validation\Validation $validation
-     * @param Teddy\Validation\Fields\Field[]    $fields
+     * @param Teddy\Validation\Field[]           $fields
      */
     public function validateParsedBody($validation, array $fields = [])
     {
@@ -54,7 +54,7 @@ class Request extends TeddyRequest
 
     /**
      * @param string|Teddy\Validation\Validation $validation
-     * @param Teddy\Validation\Fields\Field[]    $fields
+     * @param Teddy\Validation\Field[]           $fields
      */
     public function checkParsedBody($validation, array $fields = [])
     {
