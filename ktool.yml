@@ -1,6 +1,5 @@
 build:
     ignore:
-        - vendor/bin/*
         - vendor/aliyuncs/oss-sdk-php/samples/*
         - vendor/aliyuncs/oss-sdk-php/tests/*
         - vendor/doctrine/annotations/docs/*
