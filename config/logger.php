@@ -1,16 +1,28 @@
 <?php declare(strict_types=1);
 /**
  * @author   Fung Wing Kit <wengee@gmail.com>
- * @version  2019-12-21 11:19:45 +0800
+ * @version  2021-10-25 16:12:20 +0800
  */
 
-return [
-    'default'   => env('LOG_DEFAULT_DRIVER', 'file'),
+use Teddy\Config\Repository;
 
-    'handlers'  => [
-        'file'  => [
+return [
+    'default'   => 'file',
+
+    'handlers'  => new Repository([
+        'stack'      => new Repository([
+            'driver'    => 'stack',
+            'handlers'  => ['file', 'console'],
+        ]),
+
+        'file'      => new Repository([
             'driver'    => 'file',
-            'path'      => env('LOG_FILE', __DIR__ . '/../runtime/app.log'),
-        ],
-    ],
+            'path'      => __DIR__.'/../runtime/teddy.log',
+        ]),
+
+        'console'   => new Repository([
+            'driver'    => 'file',
+            'path'      => 'php://stderr',
+        ]),
+    ]),
 ];

@@ -1,12 +1,15 @@
 <?php declare(strict_types=1);
 /**
  * @author   Fung Wing Kit <wengee@gmail.com>
- * @version  2019-11-23 10:25:44 +0800
+ * @version  2021-10-25 16:08:11 +0800
  */
 
+use Teddy\Config\Repository;
+
 return [
-    'name'      => 'Teddy Sample',
-    'baseUrl'   => env('BASE_URL', 'http://localhost'),
-    'basePath'  => __DIR__,
-    'debug'     => env('DEBUG', true),
+    'name'     => 'Teddy Sample',
+    'version'  => '1.0.0',
+    'baseUrl'  => 'http://localhost',
+    'basePath' => new Repository(__DIR__, Repository::DATA_PROTECTED),
+    'debug'    => true,
 ];

@@ -1,8 +1,11 @@
 <?php declare(strict_types=1);
 /**
  * @author   Fung Wing Kit <wengee@gmail.com>
- * @version  2019-12-19 16:48:47 +0800
+ * @version  2021-10-25 16:37:23 +0800
  */
 
+use Teddy\Routing\RouteCollectorProxy;
+
+/** @var RouteCollectorProxy $router */
 $router->get('[/]', 'IndexController:index');
 $router->post('[/]', 'IndexController:index');
