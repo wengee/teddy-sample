@@ -14,3 +14,6 @@ build:
         - vendor/nikic/fast-route/test/*
         - vendor/phpoption/phpoption/tests/*
         - vendor/ralouphie/getallheaders/tests/*
+
+watch:
+    exec: /usr/bin/env swoole-cli index.php
