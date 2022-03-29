@@ -1,11 +1,9 @@
 <?php declare(strict_types=1);
 /**
  * @author   Fung Wing Kit <wengee@gmail.com>
- * @version  2020-03-05 14:35:20 +0800
+ * @version  2022-03-29 11:16:11 +0800
  */
 
 return [
-    'list' => [
-        new App\Commands\TestCommand,
-    ],
+    new App\Commands\TestCommand(),
 ];

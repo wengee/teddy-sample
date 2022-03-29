@@ -1,33 +1,28 @@
 <?php declare(strict_types=1);
 /**
  * @author   Fung Wing Kit <wengee@gmail.com>
- * @version  2021-10-25 16:34:28 +0800
+ * @version  2022-03-29 11:03:09 +0800
  */
 
 return [
+    'host'     => '127.0.0.1',
+    'port'     => 9500,
+    'crontab'  => true,
+    'consumer' => true,
+
     // Websocket config.
     'websocket' => [
         'enabled'  => false,
         'handler'  => null,
     ],
 
-    // Schedule tasks.
-    // time slots: second minute hour day month week
-    // e.g. ['*/5 * * * *', App\Tasks\Demo::class]
-    'schedule' => [
-        'enabled' => false,
-        'list'    => [
-        ],
-    ],
-
     // Task queue config.
     'queue' => [
-        'enabled'  => false,
-        'consumer' => (bool) env('SWOOLE_QUEUE_ENABLE'),
+        'key'          => 'queue:',
+        'redis'        => 'default',
+        'retrySeconds' => 5,
+        'maxAttempts'  => 5,
     ],
-
-    // Custom processes.
-    'processes' => [],
 
     // Swoole server options.
     'options' => [
