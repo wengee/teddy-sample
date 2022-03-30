@@ -502,16 +502,16 @@
         },
         {
             "name": "fwkit/teddy",
-            "version": "4.0.0",
+            "version": "4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wengee/teddy.git",
-                "reference": "ca1c9b15fe9638cca0ecbe3f88748492ae59b54d"
+                "reference": "4271843c466a40b6cc7decd6a9af97ba27114814"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wengee/teddy/zipball/ca1c9b15fe9638cca0ecbe3f88748492ae59b54d",
-                "reference": "ca1c9b15fe9638cca0ecbe3f88748492ae59b54d",
+                "url": "https://api.github.com/repos/wengee/teddy/zipball/4271843c466a40b6cc7decd6a9af97ba27114814",
+                "reference": "4271843c466a40b6cc7decd6a9af97ba27114814",
                 "shasum": ""
             },
             "require": {
@@ -569,9 +569,9 @@
             "description": "A PHP framework based on SLIM",
             "support": {
                 "issues": "https://github.com/wengee/teddy/issues",
-                "source": "https://github.com/wengee/teddy/tree/4.0.0"
+                "source": "https://github.com/wengee/teddy/tree/4.0.1"
             },
-            "time": "2022-03-28T09:34:24+00:00"
+            "time": "2022-03-30T08:56:33+00:00"
         },
         {
             "name": "graham-campbell/result-type",
@@ -902,16 +902,16 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v8.83.5",
+            "version": "v8.83.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
-                "reference": "5cf7ed1c0a1b8049576b29f5cab5c822149aaa91"
+                "reference": "fc232e89c0214dba5d2b431220a24b02d480a472"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/collections/zipball/5cf7ed1c0a1b8049576b29f5cab5c822149aaa91",
-                "reference": "5cf7ed1c0a1b8049576b29f5cab5c822149aaa91",
+                "url": "https://api.github.com/repos/illuminate/collections/zipball/fc232e89c0214dba5d2b431220a24b02d480a472",
+                "reference": "fc232e89c0214dba5d2b431220a24b02d480a472",
                 "shasum": ""
             },
             "require": {
@@ -952,11 +952,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2022-02-15T14:40:58+00:00"
+            "time": "2022-03-25T14:53:23+00:00"
         },
         {
             "name": "illuminate/contracts",
-            "version": "v8.83.5",
+            "version": "v8.83.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -1004,7 +1004,7 @@
         },
         {
             "name": "illuminate/macroable",
-            "version": "v8.83.5",
+            "version": "v8.83.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -1050,7 +1050,7 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v8.83.5",
+            "version": "v8.83.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
@@ -3725,16 +3725,16 @@
         },
         {
             "name": "workerman/workerman",
-            "version": "v4.0.31",
+            "version": "v4.0.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/walkor/workerman.git",
-                "reference": "39df5a1627345678e8b83ac86efabafdf31ca9d5"
+                "reference": "7e7a95d38abf2a878438070aa8934029059d6866"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/walkor/workerman/zipball/39df5a1627345678e8b83ac86efabafdf31ca9d5",
-                "reference": "39df5a1627345678e8b83ac86efabafdf31ca9d5",
+                "url": "https://api.github.com/repos/walkor/workerman/zipball/7e7a95d38abf2a878438070aa8934029059d6866",
+                "reference": "7e7a95d38abf2a878438070aa8934029059d6866",
                 "shasum": ""
             },
             "require": {
@@ -3784,7 +3784,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-23T02:14:58+00:00"
+            "time": "2022-03-29T14:18:51+00:00"
         }
     ],
     "packages-dev": [
