@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 /**
  * @author   Fung Wing Kit <wengee@gmail.com>
- * @version  2022-03-29 11:03:09 +0800
+ * @version  2022-08-20 17:12:40 +0800
  */
 
 return [
@@ -12,8 +12,8 @@ return [
 
     // Websocket config.
     'websocket' => [
-        'enabled'  => false,
-        'handler'  => null,
+        'enabled' => false,
+        'handler' => null,
     ],
 
     // Task queue config.
@@ -26,13 +26,13 @@ return [
 
     // Swoole server options.
     'options' => [
-        'log_file'              => __DIR__.'/../runtime/swoole.log',
-        'log_level'             => SWOOLE_LOG_DEBUG,
-        'max_connection'        => 100,
-        'http_parse_post'       => false,
-        'package_max_length'    => 5 * 1024 * 1024,
-        'open_tcp_nodelay'      => true,
-        'open_cpu_affinity'     => true,
-        'coroutine_flags'       => SWOOLE_HOOK_ALL,
+        'log_file'           => runtime_path('runtime/swoole.log'),
+        'log_level'          => SWOOLE_LOG_DEBUG,
+        'max_connection'     => 100,
+        'http_parse_post'    => false,
+        'package_max_length' => 5 * 1024 * 1024,
+        'open_tcp_nodelay'   => true,
+        'open_cpu_affinity'  => true,
+        'coroutine_flags'    => SWOOLE_HOOK_ALL,
     ],
 ];

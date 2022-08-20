@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 /**
  * @author   Fung Wing Kit <wengee@gmail.com>
- * @version  2022-03-29 11:17:26 +0800
+ * @version  2022-08-20 17:12:59 +0800
  */
 
 return [
@@ -31,8 +31,8 @@ return [
     ],
 
     'stdoutFile' => null,
-    'pidFile'    => null,
-    'logFile'    => null,
+    'pidFile'    => runtime_path('runtime/app.pid'),
+    'logFile'    => runtime_path('runtime/workerman.log'),
     'daemonize'  => false,
     'loop'       => null,
 ];

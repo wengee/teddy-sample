@@ -16,4 +16,4 @@ build:
     - vendor/ralouphie/getallheaders/tests/*
 
 watch:
-  exec: /usr/bin/env php81 index.php workerman:start
+  exec: /usr/bin/env php index.php workerman:start
